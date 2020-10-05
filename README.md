@@ -1,6 +1,6 @@
 # Programming-Lab-3
 
-## All the hands-on performed..
+## All the practicals performed..
 
 Static web-pages :
 1 http://localhost:8081/PL3/index.html
