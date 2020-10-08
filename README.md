@@ -10,3 +10,5 @@ Static web-pages :
 3 http://localhost:8081/PL3/index5b2.html
 
 4 http://localhost:8081/PL3/index5b3.html
+
+5 http://localhost:8081/PL3/index6a.html
