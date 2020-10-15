@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MH-CET Registration</title>
+</head>
+<body >
+	<header><h1>MH-CET Registration Form<h1></header>
+	<form method="get">
+
+		<fieldset>
+		<h2>Student Information</h2>
+		
+		<label>First Name:</label>
+		<input type="text" name="firstname" size="15"><br><br>
+		<label>Middle Name:</label>
+		<input type="text" name="middlename" size="15"><br><br>
+		<label>Last Name:</label>
+		<input type="text" name="lastname" size="15"><br><br>
+		<label>Parent's Name:</label>
+		<input type="text" name="parentsname"><br><br>
+		<label>Mobile No.:</label> 
+		<input type="text" name="country code"  value="+91" size="2"/>   
+		<input type="text" name="phone" size="10"/> <br> <br> 
+		<label>Email ID:</label>
+		<input type="email" id="email" name="email"/><br><br>
+		<label>ID Proof:</label>
+		<select>
+			<option value="Adhar Card" selected="Adhar Card">Adhar Card</option>
+			<option value="Birth Certificate">Birth Certificate</option>
+			<option value="10th Marklist">10th Marklist</option>
+		</select><br><br>
+		<label>Address:</label><br>
+		<textarea cols="60" rows="5" value="address" required></textarea><br><br>    
+		</fieldset>
+		
+		<fieldset>
+			<h2>Educational Information</h2>
+			<label>Qualification:</label>
+			<select required> 
+				<option value="-Select Course-" selected="Course">- Select Course -</option>  
+				<option value="SSC">SSC</option>  
+				<option value="HSC-S">HSC-Science</option>  
+				<option value="HSC-A">HSC-Art</option>  
+				<option value="HSC-C">HSC-Commerce</option>    
+			</select><br><br>
+			<label>Group:</label>
+			<select required >
+				<option value="-Select Branch-">- Select Group -</option>
+                <option value="PCM">PCM</option>
+                <option value="PCB">PCB</option>
+			</select><br><br>
+			<label for="Uname">University Name:</label>
+			<input list="Uniname" id="Uname" name="Uname">
+			<datalist id="Uniname">
+				<option value="University of Pune,Pune">
+				<option value="Mumbai University,Mumbai">
+				<option value="Maharashtra State Board of Technical Education, Mumba">
+				<option value="Shivaji University, Kolhapur">
+				<option value="The Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur">
+			</datalist>
+			<br><br>
+			<label for="clg-name">College Name:</label>
+			<input list="college name" id="clg-name" name="clg-name"> 
+			<datalist id="college name">
+				<option value="- Select College -">
+				<option value="A. P. SHAH INSTITUTE OF SCIENCE">
+				<option value="WAINGANGA ARTS COLLEGE, WANGI">
+				<option value="ASHOKRAO MANE COMMERCE COLLEGE, SAVE">
+				<option value="DR.J.J.MAGDUM JUNIOR COLLEGE, JAYSINGPUR">
+				<option value="SANJAY GHODAWAT JUNIOR COLLEGE, ATIGRE">
+				<option value="MAHATMA GANDHI JUNIOR COLLEGE, KADEGAON">
+				<option value="NAV VIDYA NIKETAN INSTITUTE OF SCIENCE">
+				<option value="G. H. RAISONI INSTITUTE OF SCIENCE">
+				<option value="YASHWANTRAO CHAVAN SCHOOL OF RURAL DEVELOPMENT">
+				<option value="SHREEYASH PRATISHTHAN'S SHREEYASH COMMERCE COLLEGE,AURANGABAD">
+				<option value="SAMARTH SCIENCE COLLEGE">
+				<option value="VISHWESHWARAYYA ABHIYANTRIKI PADVIKA MAHAVIDYALAYA">
+				<option value="YESHWANTRAO CHAVAN COLLEGE OF SCIENCE">
+				<option value="SINHGAD INSTITUTE OF SCIENCE">
+			</datalist><br><br>
+			<label>Exam Seat No.:</label>
+			<input name="examseatno" size="20">
+		</fieldset>
+
+		<fieldset>
+			<h2>Exam Preferences</h2>
+			<label for="branch">MH-CET PAPER GROUP:</label>
+			<select list="paper" id="branch" name="branch">
+				<option value="PCM">PCM</option>
+				<option value="PCB">PCB</option>
+			</select><br><br>
+			<label for="city">City Preferences:</label>
+			<select id="city">
+				<optgroup label="Maharashtra">
+					<option value="Pune">Pune</option>
+					<option value="Mumbai">Mumbai</option>
+					<option value="Sangli">Sangli</option>
+					<option value="Kolhapur">Kolhapur</option>
+					<option value="Nagpur">Nagpur</option>
+					<option value="Nashik">Nashik</option>
+					<option value="Aurangabad">Aurangabad</option>
+					<option value="Satara">Satara</option>
+				</optgroup>
+				<optgroup label="Madhya Pradesh">
+					<option value="b">Bhopal</option>
+					<option value="Indore">Indore</option>
+					<option value="Ujjain">Ujjain</option>
+					<option value="Gwalior">Gwalior</option>
+					<option value="Jabalpur">Jabalpur</option>
+				</optgroup>
+				<optgroup label="Gujarat">
+					<option value="Surat">Surat</option>
+					<option value="rajkot">Rajkot</option>
+					<option value="ahmedabad">Ahmedabad</option>
+					<option value="Vadodara">Vadodara</option>
+					<option value="Gandhinagar">Gandhinagar</option>
+				</optgroup>
+				<optgroup label="Kerala">
+					<option value="kochi">Kochi</option>
+					<option value="Thrissur">Thrissur</option>
+					<option value="k">Kozhikode</option>
+					<option value="ko">Kollam</option>
+					<option value="Kannur">Kannur</option>	
+				</optgroup>
+				<optgroup label="Uttar Pradesh">
+					<option value="Lucknow">Lucknow</option>
+					<option value="Kanpur">Kanpur</option>
+					<option value="Varanasi">Varanasi</option>
+					<option value="Agra">Agra</option>
+					<option value="M">Meerut</option>
+				</optgroup>
+			</select>
+		</fieldset>
+
+		<button type="button" value="back" formaction="back">Back</button>
+		<button type="button" name="button" formaction="Reset" formmethod="post">Reset</button>
+		<button type="button" name="button" formaction="Submit" onclick="myalert()">Submit</button>
+ 			<script>
+				function myalert(){
+					alert("Form is Submitted");
+				}
+			</script>
+	</form>
+</body>
+</html>
