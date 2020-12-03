@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum and average of 10 numbers</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        header{font-size: 30px;font-style: italic; color:rgb(0, 0, 0); float: left;}
+        samp{font-weight: bold; font-size: 15px;font-family: inherit;}
+        kbd{background-color: rgb(221, 197, 197); border-radius: 3px;border: 1px solid #b4b4b4; box-shadow: 0 1px 1px rgba(0,0,0,0.2),0 2px 0 0 rgba(255,255,255,0.7) inset; color: #333; display: inline-block;font-size: 0.85em;font-weight: 700; line-height: 1;padding: 2px 4px; white-space: nowrap;}
+        pre{ width:750px;border-style: solid;border-width: 3px;border-right-width: 3px; border-left-width: 3px; border-color: black;margin-left:3.0rem; border-bottom-width: 3px}
+    </style>
+</head>
+<body><h1>
+<header>Problem Statement:</header><br>
+<h2>Write a program in any language to read 10 numbers from keyboard and find their sum and average.</h2>
+<footer style="width: 750px; color: #0000ff; font-style: italic;">The problem statement is to write a code in any programming langauge to find the sum and average if ten inputed numbers. The code is written in C langauge. Go through the sample input and output. Variables used in the program are given below.
+The complexity of the program is mentioned below.</footer>
+</h1>
+<p><strong>Code:</strong></p>
+<pre>
+        int main()  <br>
+        {  <br>
+            int i,n,sum=0;<br>
+            float avg;<br>
+            printf("Input the 10 numbers : \n");<br>
+            for (i=1;i<=10;i++)<br>
+            {<br>
+                printf("Number-%d :",i);<br>
+                scanf("%d",&n);<br>
+                sum +=n;<br>
+            }<br>
+            avg=sum/10.0;<br>
+            printf("The sum of 10 no is : %d\nThe Average is : %f\n",sum,avg);<br>
+            return 0;<br>
+        }<br>
+    </pre>
+    <p><strong>Variables used in the program:</strong></p>
+    <var>i, n, sum, avg</var>
+    <p><strong>Sample Input:</strong></p>
+    <samp>1<br>
+        2<br>
+        3<br>
+        4<br>
+        5<br>
+        6<br>
+        7<br>
+        8<br>
+        9<br>
+        10<br>
+    </samp>
+    <p><samp>Sample Output:<br><kbd>55</kbd>
+        <kbd>5.500000</kbd>
+    </samp></p>
+    <p><strong>Complexity:</strong></p>
+    <p>n</p>
+</body>
+</html>
