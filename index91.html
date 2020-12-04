@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment6A</title>
+    <link rel="stylesheet" href="index9.css">
+	<style>
+		form{
+            float:left;
+            position: relative;
+			width: 1000px;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: bold;
+            border: 1px solid #b4b4b4;
+            border-width: thin;
+            border-color: #141413;
+            margin: 20px;
+            padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1 width: 80%; height: 10px;">Student's Feedback On Department Facilities</h1><br>
+		</header>
+		
+		<form action="" method="get">
+			Name:
+			<input type="text" placeholder="First Name" accept="fname" size="30" name="fname" required="fname">
+			<input type="text" placeholder="Middle Name" accept="mname" size="30" name="mname" required="mname">
+			<input type="text" placeholder="Last Name" accept="lname" size="30" name="lname" required="lname"><br><br>
+			E-mail Address:
+            <input type="email" placeholder="eg.shruti.mohite@gmail.com"  accept="mail" size="40" required="mail" name="mail"><br><br>
+            Contact Number:
+			<input type="Number" placeholder="Only 10 digits" name="zip" size="10"><br><br>
+			Department
+			<select name="Department">
+				<option>Select Department</option>
+				<option>Computer Science And Engineering</option>
+				<option>Information Technology</option>
+				<option>Civil</option>
+				<option>Electrical</option>
+				<option>Electronics</option>
+				<option>Mechanical</option>
+            </select><br><br>
+            PRN:
+			<input type="text" placeholder="2018BTECS00086" name="prn"><br><br>
+            <label for="image">College ID:</label>
+            <input type="file" name="image" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps"><br><br>
+            Availability Of Departmental Labs:<br>
+  			<input type="radio" name="radio1">
+  			<label for="name">Always available</label><br>
+  			<input type="radio" name="radio2">
+  			<label for="name">We get access whenever we want</label><br>
+  			<input type="radio" name="radio3">
+  			<label for="name">available on scheduled timing</label><br>
+  			<input type="radio" name="radio4">
+              <label for="name">Sometimes</label><br><br>
+            Availability of Faculty:
+  			<select name="faculty">
+  				<option>Select Correct Option</option>
+				<option>Always</option>
+				<option>During practical sessions</option>
+				<option>Sometimes</option>
+				<option>Never</option>
+            </select><br><br>
+            Regular Lectures Of Each Subject:
+            <select name="boolean">
+                <option>Yes</option>
+                <option>No</option>
+            </select><br><br>
+            Completion Of Syllabus Before Exams:
+            <select name="boolean">
+                <option>Yes</option>
+                <option>No</option>
+            </select><br><br>
+			Suggestions/Comments:</label><br>
+			<textarea placeholder="Enter details appropriately as it will be helpful for develpment of our department" rows="7" cols="70" maxlength="500"></textarea><br><br>
+			<button type="button" name="submit" formaction="submit" onclick="myalert()">Submit</button>
+			<script>
+				function myalert()
+				{
+					alert("Successfully submitted!!");
+				}
+			</script>
+			<input type="reset" value="Reset">
+		</form>
+	</div>
+</body>
+</html>

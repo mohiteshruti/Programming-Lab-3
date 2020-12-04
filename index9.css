@@ -1,0 +1,14 @@
+header{
+    text-align: center;
+}
+section{
+    border: 1px solid #b4b4b4;
+            border-width: thin;
+            border-color: #141413;
+            margin: 20px;
+            padding: 10px;
+            float:none;
+            position:relative;
+            width: 400px;
+            text-align: center;
+}
