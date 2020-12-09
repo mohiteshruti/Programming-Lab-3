@@ -1,0 +1,39 @@
+.card{
+position: absolute;
+  width: 100%;
+  height: 100%;
+background-color: #949493;
+  color: rgb(250, 248, 248);
+  width: 250px;
+  height: 1056px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  margin-left: 50px;
+}
+p{
+margin-left: 25px;
+text-align: left;
+}
+.card2{
+position: absolute;
+  width: 100%;
+  height: 100%;
+background-color: #f2f2f2;
+  color: black;
+  width: 566px;
+  height: 1056px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  margin-left: 298px;
+}
+.info{
+text-align: left;
+margin-left: 310px;
+margin-top: 80px;
+}
+.info li{
+display: inline-block;
+font-size: 16px;
+}
